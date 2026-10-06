@@ -23,7 +23,7 @@
 require_once __DIR__ . '/config/conexion.php';
 $parcelas = $conexion->query('SELECT id, nombre FROM parcelas ORDER BY nombre');
 ?>
-<main>
+<main/>
   <h1>Registrar riego</h1>
   <?php if (isset($_GET['error'])): ?>
     <p class="aviso mal" role="alert">Los datos no son válidos. Revisa el formulario e inténtalo de nuevo.</p>
